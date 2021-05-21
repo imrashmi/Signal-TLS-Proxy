@@ -39,3 +39,4 @@ If you want to help by running a proxy, to get started you only need the followi
 6. Use Docker Compose to launch the proxy:
 * `sudo docker-compose up --detach`
 7. Your proxy is now running! You can share your proxy with friends and family using this URL format: `https://signal.tube/#<your_domain_name>`
+ 
