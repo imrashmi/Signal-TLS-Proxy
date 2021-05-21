@@ -8,3 +8,6 @@ To run a Signal TLS proxy, you will need a host with a domain name that has port
 1. `docker-compose up --detach`
 
 Your proxy is now running! You can share this with the URL `https://signal.tube/#<your_host_name>` 
+
+For detailed configuration visit below link
+https://signal.org/blog/help-iran-reconnect/
