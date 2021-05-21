@@ -16,26 +16,26 @@ For detailed configuration visit below link
 Detailed Configuration Docs:
 
 
-Act as a proxy
+# Act as a proxy
 
 If you want to help by running a proxy, to get started you only need the following:
 
-  `a.A server with ports 80 and 443 available.`
- ` b.A domain name (or subdomain) that points to the server’s IP address.
-  c.The proxy is extremely lightweight. An inexpensive and tiny VPS can easily handle hundreds of concurrent users.`
+ * `a.A server with ports 80 and 443 available.`
+ * `b.A domain name (or subdomain) that points to the server’s IP address.`
+ * `c.The proxy is extremely lightweight. An inexpensive and tiny VPS can easily handle hundreds of concurrent users.`
   
-Here’s how to make it work:
+# Here’s how to make it work:
 
-1.SSH into the server.
-2.Install Docker, Docker Compose, and git:
-`sudo apt update && sudo apt install docker docker-compose git`
-3.Clone the Signal TLS Proxy repository:
-`git clone https://github.com/signalapp/Signal-TLS-Proxy.git`
-4.Enter the repo directory:
-`cd Signal-TLS-Proxy`
-5.Run the helper script that configures and provisions a TLS certificate from Let’s Encrypt:
-`sudo ./init-certificate.sh`
-6.You will be prompted to enter the domain or subdomain that is pointing to this server’s IP address.
-7.Use Docker Compose to launch the proxy:
-`sudo docker-compose up --detach`
-8.Your proxy is now running! You can share your proxy with friends and family using this URL format: https://signal.tube/#<your_domain_name>
+1. SSH into the server.
+* `ssh username@hostname`
+2. Install Docker, Docker Compose, and git:
+* `sudo apt update && sudo apt install docker docker-compose git`
+3. Clone the Signal TLS Proxy repository:
+* `git clone https://github.com/signalapp/Signal-TLS-Proxy.git`
+4. Enter the repo directory:
+* `cd Signal-TLS-Proxy`
+5. Run the helper script that configures and provisions a TLS certificate from Let’s Encrypt:
+* `sudo ./init-certificate.sh` (_You will be prompted to enter the domain or subdomain that is pointing to this server’s IP address._)
+6. Use Docker Compose to launch the proxy:
+* `sudo docker-compose up --detach`
+7. Your proxy is now running! You can share your proxy with friends and family using this URL format: `https://signal.tube/#<your_domain_name>`
